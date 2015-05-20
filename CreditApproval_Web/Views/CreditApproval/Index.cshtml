@@ -1,0 +1,214 @@
+﻿
+@{
+    ViewBag.Title = "Ceviz Kredi Merkezi";
+}
+
+<h2>Kredi Başvuru Formu</h2>
+
+<form action="#" method="post">
+    <table>
+        <tr>
+            <td>Mevcut Vadesiz Mevduat Hesap Durumu: </td>
+            <td>
+                <select name="StatusOfExistingCheckingAccount">
+                    <option value="">Lütfen Seçim Yapınız</option>
+                    <option value="A11">< 0 TL</option>
+                    <option value="A12">0-200 TL</option>
+                    <option value="A13">> 200 TL</option>
+                    <option value="A14">Vadesiz Hesap Yok</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Kredi Ödeme Süresi: </td>
+            <td>
+                <select name="DurationInMonths">
+                    <option value="">Lütfen Seçim Yapınız</option>
+                    <option value="3">3 Ay</option>
+                    <option value="6">6 Ay</option>
+                    <option value="12">12 Ay</option>
+                    <option value="24">24 Ay</option>
+                    <option value="36">36 Ay</option>
+                    <option value="48">48 Ay</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Credit history: </td>
+            <td>
+                <select name="CreditHistory">
+                    <option value="">Lütfen Seçim Yapınız</option>
+                    <option value="A30">Daha Önce Kredi Alınmamış veya Bütün Krediler Zamanında Ödenmiş</option>
+                    <option value="A31">Bankamızdan Alınan Bütün Krediler Zamanında Ödenmiş</option>
+                    <option value="A32">Varolan Krediler Bugüne Kadar Zamanında Ödenmiş</option>
+                    <option value="A33">Daha Önce Alınan Kredilerde Ödeme Gecikmeleri Yaşanmış</option>
+                    <option value="A34">Tehlikeli Müşteri veya Başka Bankalarda Halen Kredileri Bulunmakta</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Kredi Amacı: </td>
+            <td>
+                <select name="Purpose">
+                    <option value="">Lütfen Seçim Yapınız</option>
+                    <option value="A40">Araç (Yeni)</option>
+                    <option value="A41">Araç (2. El)</option>
+                    <option value="A42">Ev Eşyası</option>
+                    <option value="A43">Elektronik</option>
+                    <option value="A44">Yerli Mallar</option>
+                    <option value="A45">Tamirat</option>
+                    <option value="A46">Eğitim</option>
+                    <option value="A47">Tatil</option>
+                    <option value="A48">Destek</option>
+                    <option value="A49">İş</option>
+                    <option value="A410">Diğer</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Kredi Miktarı: </td>
+            <td><input type="text" name="CreditAmount" /></td>
+        </tr>
+        <tr>
+            <td>Vadeli Mevduat/Fonlar: </td>
+            <td>
+                <select name="SavingsAccountBonds">
+                    <option value="">Lütfen Seçim Yapınız</option>
+                    <option value="A61">< 100 TL</option>
+                    <option value="A62">100-500 TL</option>
+                    <option value="A63">500-1000 TL</option>
+                    <option value="A64">> 1000 TL</option>
+                    <option value="A65">Vadeli Mevduat/Fon Yok</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Son İşyerinde Kaç Senedir Çalışıyor: </td>
+            <td>
+                <select name="PresentEmploymentSince">
+                    <option value="">Lütfen Seçim Yapınız</option>
+                    <option value="A71">İşsiz</option>
+                    <option value="A72">< 1 sene</option>
+                    <option value="A73">1-4 sene</option>
+                    <option value="A74">4-7 sene</option>
+                    <option value="A75">>7 sene</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Peşinat Yüzdesi: </td>
+            <td><input type="text" name="InstallmentRate" /></td>
+        </tr>
+        <tr>
+            <td>Cinsiyet ve Medeni Hal: </td>
+            <td>
+                <select name="PersonalStatusAndSex">
+                    <option value="">Lütfen Seçim Yapınız</option>
+                    <option value="A91">Erkek - Boşanmış</option>
+                    <option value="A92">Kadın - Boşanmış/Evli</option>
+                    <option value="A93">Erkek - Bekar</option>
+                    <option value="A94">Erkek - Evli/Dul</option>
+                    <option value="A95">>Kadın - Bekar</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Kefil: </td>
+            <td>
+                <select name="OtherDebtorsGuarantors">
+                    <option value="">Lütfen Seçim Yapınız</option>
+                    <option value="A101">Yok</option>
+                    <option value="A102">Ortak Var</option>
+                    <option value="A103">Kefil Var</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Yaşadığı Evde Kaldığı Süresi: </td>
+            <td><input type="text" name="PresentResidenceSince" /></td>
+        </tr>
+        <tr>
+            <td>Sahip Olduğu Mülk: </td>
+            <td>
+                <select name="Property">
+                    <option value="">Lütfen Seçim Yapınız</option>
+                    <option value="A121">Emlak</option>
+                    <option value="A122">Hayat Sigortası</option>
+                    <option value="A123">Araç veya Diğer</option>
+                    <option value="A124">Bilinmiyor veya Emlak Yok</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Yaş: </td>
+            <td><input type="text" name="AgeInYears" /></td>
+        </tr>
+        <tr>
+            <td>Başka Taksit Ödemesi Var mı: </td>
+            <td>
+                <select name="OtherInstallmentPlans">
+                    <option value="">Lütfen Seçim Yapınız</option>
+                    <option value="A141">Banka</option>
+                    <option value="A142">Alışveriş</option>
+                    <option value="A143">Yok</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Kaldığı Konut Durumu: </td>
+            <td>
+                <select name="Housing">
+                    <option value="">Lütfen Seçim Yapınız</option>
+                    <option value="A151">Kiralık</option>
+                    <option value="A152">Sahibi</option>
+                    <option value="A153">Kaldığı Yere Para Vermiyor</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Bankamızda Aldığı Başka Kredi Sayısı: </td>
+            <td><input type="text" name="NumberOfExistingCredits" /></td>
+        </tr>
+        <tr>
+            <td>İş: </td>
+            <td>
+                <select name="Job">
+                    <option value="">Lütfen Seçim Yapınız</option>
+                    <option value="A171">İşsiz / Vasıfsız Elaman / Yabancı </option>
+                    <option value="A172">Vasıfsız - Vatandaş</option>
+                    <option value="A173">Vasıflı - Bordrolu</option>
+                    <option value="A174">Yönetici / İş Sahibi / Üst Yönetici</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Bakmak Zorunda Olduğu Birey Sayısı </td>
+            <td><input type="text" name="NumberOfPeopleBeingLiableFor" /></td>
+        </tr>
+        <tr>
+            <td>Telefon: </td>
+            <td>
+                <select name="Telephone">
+                    <option value="">Lütfen Seçim Yapınız</option>
+                    <option value="A191">Yok</option>
+                    <option value="A192">Var - Müşterinin Üstüne Kayıtlı</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Yabancı İşci: </td>
+            <td>
+                <select name="ForeignWorker">
+                    <option value="">Lütfen Seçim Yapınız</option>
+                    <option value="A201">Evet</option>
+                    <option value="A202">Hayır</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td><input type="submit" value="Submit" /></td>
+            <td>@ViewData["result"]</td>
+        </tr>
+    </table>
+</form>
+
